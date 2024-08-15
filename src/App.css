@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: left;
+}
+
+.movie-poster {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px;
+}
