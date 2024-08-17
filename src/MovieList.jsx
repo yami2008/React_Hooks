@@ -1,17 +1,12 @@
 import React from 'react';
-import MovieCard from './MovieCard.jsx';
+import movies from './movies.jsx';
+import MovieCard from './MovieCard';
 
-const MovieList = ({ movies }) => {
+const MovieList = () => {
     return (
         <div className="movie-list">
-            {movies.map((movie, index) => (
-                <MovieCard
-                    key={index}
-                    title={movie.title}
-                    description={movie.description}
-                    posterURL={movie.posterURL}
-                    rating={movie.rating}
-                />
+            {movies.map(movie => (
+                <MovieCard key={movie.title} {...movie} />
             ))}
         </div>
     );
